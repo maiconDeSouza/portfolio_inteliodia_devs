@@ -163,7 +163,7 @@ main .top .photo img {
 }
 
 .specialties .box-specialties article:hover {
-    box-shadow: 0 0 20px #5c5c5c;
+    box-shadow: 0 0 20px #00ff08;
     transform: scale(1.05);
 }
 
