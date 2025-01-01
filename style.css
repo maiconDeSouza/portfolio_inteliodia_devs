@@ -125,3 +125,58 @@ main .top .photo img {
 /*
 ********** Main Top end **********
 */
+
+
+/*
+********** Main specialties **********
+*/
+.specialties {
+    padding: 2rem 0;
+    color: #fff;
+}
+
+.specialties h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.specialties h2 span {
+    color: #00ff08;
+}
+
+.specialties .box-specialties {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+}
+
+.specialties .box-specialties article {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: all .6s
+}
+
+.specialties .box-specialties article:hover {
+    box-shadow: 0 0 20px #5c5c5c;
+    transform: scale(1.05);
+}
+
+.specialties .box-specialties article i {
+    font-size: 4rem;
+    color: #00ff08;
+}
+
+.specialties .box-specialties article h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/*
+********** Main specialties end **********
+*/
