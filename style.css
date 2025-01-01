@@ -180,3 +180,72 @@ main .top .photo img {
 /*
 ********** Main specialties end **********
 */
+
+
+/*
+********** Main presentation **********
+*/
+main .presentation {
+    max-width: 62.5rem;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 1rem;
+}
+
+main .presentation .profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+main .presentation .profile h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height: 2.5rem;
+}
+
+main .presentation .profile h2 span {
+    display: block;
+    color: #00ff08;
+}
+
+main .presentation .profile .social ul {
+    display: flex;
+    gap: .5rem;
+}
+
+main .presentation .profile .social ul li {
+    width: 3.125rem;
+    height: 3.125rem;
+    border: 1px solid #00ff08;
+    border-radius: 50%;
+    transition: all .6s;
+}
+
+main .presentation .profile .social ul li:hover {
+    box-shadow: 0 0 10px #00ff08;
+    transform: scale(1.05);
+}
+
+main .presentation .profile .social ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5c5c5c;
+    transition: .6s;
+}
+
+main .presentation .profile .social ul li a:hover {
+    color: #00ff08;
+    transform: scale(1.05);
+}
+
+
+/*
+********** Main presentation end **********
+*/
