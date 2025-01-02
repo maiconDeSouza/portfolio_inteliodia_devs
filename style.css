@@ -254,24 +254,27 @@ main .presentation .profile .social ul li a:hover {
 ********** Main portfolio **********
 */
 .portfolio {
+    box-shadow: 0 0 20px 10px #ffffff25;
+}
+
+.portfolio div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     color: #fff;
-    box-shadow: 0 0 20px 5px #ffffff46;
 }
 
-.portfolio .portfolio-title h2 {
+.portfolio div .portfolio-title h2 {
     font-size: 2.5rem;
     text-align: center;
 }
 
-.portfolio .portfolio-title h2 span {
+.portfolio div .portfolio-title h2 span {
     color: #00ff08;
 }
 
-.portfolio .cards-portfolio {
+.portfolio div .cards-portfolio {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -279,7 +282,7 @@ main .presentation .profile .social ul li a:hover {
     
 }
 
-.portfolio .cards-portfolio article {
+.portfolio div .cards-portfolio article {
     position: relative;
     height: 600px;
     background-image: url("./images/imagem.jpg");
@@ -288,11 +291,11 @@ main .presentation .profile .social ul li a:hover {
     transition: all .8s;
 }
 
-.portfolio .cards-portfolio article:hover {
+.portfolio div .cards-portfolio article:hover {
     background-position: 100% 100%;
 }
 
-.portfolio .cards-portfolio article div {
+.portfolio div .cards-portfolio article div {
     position: absolute;
     top: 0;
     left: 0;
@@ -307,10 +310,9 @@ main .presentation .profile .social ul li a:hover {
     transition: all .6s;
     font-size: 2rem;
     font-weight: 900;
-
 }
 
-.portfolio .cards-portfolio article div:hover {
+.portfolio div .cards-portfolio article div:hover {
     opacity: 0.8;
 }
 
