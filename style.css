@@ -245,7 +245,76 @@ main .presentation .profile .social ul li a:hover {
     transform: scale(1.05);
 }
 
-
 /*
 ********** Main presentation end **********
+*/
+
+
+/*
+********** Main portfolio **********
+*/
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: #fff;
+    box-shadow: 0 0 20px 5px #ffffff46;
+}
+
+.portfolio .portfolio-title h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.portfolio .portfolio-title h2 span {
+    color: #00ff08;
+}
+
+.portfolio .cards-portfolio {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 2rem;
+    
+}
+
+.portfolio .cards-portfolio article {
+    position: relative;
+    height: 600px;
+    background-image: url("./images/imagem.jpg");
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: all .8s;
+}
+
+.portfolio .cards-portfolio article:hover {
+    background-position: 100% 100%;
+}
+
+.portfolio .cards-portfolio article div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0;
+    transition: all .6s;
+    font-size: 2rem;
+    font-weight: 900;
+
+}
+
+.portfolio .cards-portfolio article div:hover {
+    opacity: 0.8;
+}
+
+
+/*
+********** Main portfolio end **********
 */
